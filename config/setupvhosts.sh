@@ -37,6 +37,7 @@ else
     export OIDC_REMOTE_USER_CLAIM=${OIDC_REMOTE_USER_CLAIM:-preferred_username}
     export OIDC_SSL_VERIFY=${OIDC_SSL_VERIFY:-On}
     export OIDC_TOKEN_ENDPOINT_AUTH=${OIDC_TOKEN_ENDPOINT_AUTH:-client_secret_basic}
+    export PUBLIC_PATH=${PUBLIC_PATH:-/}
 
     CALLBACK_ROOT_SUB_COUNT=`echo $OIDC_CALLBACK_URL | awk -F/ '{print NF}'`
     CALLBACK_ROOT_SUB_COUNT=`expr $CALLBACK_ROOT_SUB_COUNT - 2 2>/dev/null`
