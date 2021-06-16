@@ -47,6 +47,7 @@ The available environment variables can be sorted in several categories:
 |  `PROXY_PUBLIC_PORT`         | `${PROXY_PORT}`                           | Port used in the OIDC redirect URI                                         |
 |  `PROXY_PROTO`               | `http`                                    | On which protocol (`http`/`https`) will connections be accepted            |
 |  `PROXY_PUBLIC_PROTO`        | `${PROXY_PROTO}`                          | Protocol used in the OIDC redirect URI                                     |
+|  `PUBLIC_PATH`               | `/`                                       | The path on which to access the service                                    |
 
 #### Connection to the backend server (Fusion Directory)
 
